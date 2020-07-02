@@ -4,7 +4,7 @@
 
 连接池一般对外提供获得连接、归还连接的接口给客户端使用，并暴露最小空闲连接数、最大连接数等可配置参数，在内部则实现连接建立、连接心跳保持、连接管理、空闲连接回收、连接可用性检测等功能。连接池的结构示意图，如下所示：
 
-![image-20200624143140975](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20200624143140975.png)
+![image-20200624143140975](.\images\image-20200624143140975.png)
 
 业务项目中经常会用到的连接池，主要是数据库连接池、Redis 连接池和 HTTP 连接池。
 
@@ -105,7 +105,7 @@ public class Connection implements Closeable {
 
 类图如下：
 
-![image-20200628145944140](C:\Users\A\AppData\Roaming\Typora\typora-user-images\image-20200628145944140.png)
+![image-20200628145944140](images\image-20200628145944140.png)
 
 如下是Connection类的sendCommand方法，用于发送redis指令。
 
@@ -187,3 +187,22 @@ Runtime.getRuntime().addShutdownHook(new Thread(() -> {
 JedisPool 的 getResource 方法在拿到 Jedis 对象后，将自己设置为了连接池。连接池JedisPool，继承了 JedisPoolAbstract，而后者继承了抽象类 Pool，Pool 内部维护了Apache Common 的通用池 GenericObjectPool。JedisPool 的连接池就是基于GenericObjectPool 的。
 
 看到这里我们了解了，Jedis 的 API 实现是我们说的三种类型中的第一种，也就是连接池和连接分离的 API，JedisPool 是线程安全的连接池，Jedis 是非线程安全的单一连接。
+
+
+
+### Q7-3：使用连接池务必确保复用
+
+1.池复用的一些概念
+
+池一定是用来复用的，否则其使用代价会比每次创建单一对象更大。对连接池来说更是如此，原因如下：
+
+创建连接池的时候很可能一次性创建了多个连接，大多数连接池考虑到性能，会在初始化的时候维护一定数量的最小连接（毕竟初始化连接池的过程一般是一次性的），可以直接使用。如果每次使用连接池都按需创建连接池，那么很可能你只用到一个连接，但是创建了 N 个连接。
+
+连接池一般会有一些管理模块，也就是连接池的结构示意图中的绿色部分。举个例子，大多数的连接池都有闲置超时的概念。连接池会检测连接的闲置时间，定期回收闲置的连接，把活跃连接数降到最低（闲置）连接的配置值，减轻服务端的压力。一般情况
+
+下，闲置连接由独立线程管理，启动了空闲检测的连接池相当于还会启动一个线程。此外，有些连接池还需要独立线程负责连接保活等功能。因此，启动一个连接池相当于启动了 N 个线程。
+
+除了使用代价，连接池不释放，还可能会引起线程泄露。接下来，我就以 Apache HttpClient 为例，和你说说连接池不复用的问题。首先，创建一个 CloseableHttpClient，设置使用PoolingHttpClientConnectionManager 连接池并启用空闲连接驱逐策略，最大空闲时间
+
+为 60 秒，然后使用这个连接来请求一个会返回 OK 字符串的服务端接口：
+
