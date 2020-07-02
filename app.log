@@ -1,0 +1,922 @@
+[16:28:50.788] [restartedMain] [INFO ] [c.s.training.concurrent.demo.Application:55  ] - Starting Application on DESKTOP-RNEJQOJ with PID 2180 (started by A in G:\doc\培训相关\concurrent.demo)
+[16:28:50.798] [restartedMain] [INFO ] [c.s.training.concurrent.demo.Application:651 ] - No active profile set, falling back to default profiles: default
+[16:28:50.979] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[16:28:50.980] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[16:28:54.867] [restartedMain] [INFO ] [o.s.b.w.embedded.tomcat.TomcatWebServer:92  ] - Tomcat initialized with port(s): 8080 (http)
+[16:28:54.910] [restartedMain] [INFO ] [o.apache.coyote.http11.Http11NioProtocol:173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+[16:28:54.912] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Starting service [Tomcat]
+[16:28:54.913] [restartedMain] [INFO ] [org.apache.catalina.core.StandardEngine:173 ] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+[16:28:55.318] [restartedMain] [INFO ] [o.a.c.c.C.[Tomcat].[localhost].[/]:173 ] - Initializing Spring embedded WebApplicationContext
+[16:28:55.319] [restartedMain] [INFO ] [o.s.web.context.ContextLoader:284 ] - Root WebApplicationContext: initialization completed in 4338 ms
+[16:28:55.600] [restartedMain] [WARN ] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558 ] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'improperDataSourcePoolSizeController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userRepository'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.snowball.training.concurrent.demo.question7.datasource.UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[16:28:55.616] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Stopping service [Tomcat]
+[16:28:55.684] [restartedMain] [INFO ] [o.s.b.a.l.ConditionEvaluationReportLoggingListener:136 ] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[16:28:56.129] [restartedMain] [ERROR] [o.s.b.d.LoggingFailureAnalysisReporter:40  ] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userRepository in com.snowball.training.concurrent.demo.question7.datasource.UserService required a bean of type 'com.snowball.training.concurrent.demo.question7.datasource.UserRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.snowball.training.concurrent.demo.question7.datasource.UserRepository' in your configuration.
+
+[16:57:18.904] [restartedMain] [INFO ] [c.s.training.concurrent.demo.Application:55  ] - Starting Application on DESKTOP-RNEJQOJ with PID 18596 (started by A in G:\doc\培训相关\concurrent.demo)
+[16:57:18.929] [restartedMain] [INFO ] [c.s.training.concurrent.demo.Application:651 ] - No active profile set, falling back to default profiles: default
+[16:57:18.972] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[16:57:18.973] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[16:57:20.417] [restartedMain] [INFO ] [o.s.b.w.embedded.tomcat.TomcatWebServer:92  ] - Tomcat initialized with port(s): 8080 (http)
+[16:57:20.426] [restartedMain] [INFO ] [o.apache.coyote.http11.Http11NioProtocol:173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+[16:57:20.427] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Starting service [Tomcat]
+[16:57:20.428] [restartedMain] [INFO ] [org.apache.catalina.core.StandardEngine:173 ] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+[16:57:20.551] [restartedMain] [INFO ] [o.a.c.c.C.[Tomcat].[localhost].[/]:173 ] - Initializing Spring embedded WebApplicationContext
+[16:57:20.551] [restartedMain] [INFO ] [o.s.web.context.ContextLoader:284 ] - Root WebApplicationContext: initialization completed in 1578 ms
+[16:57:20.633] [restartedMain] [WARN ] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558 ] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'improperDataSourcePoolSizeController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userRepository'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.snowball.training.concurrent.demo.question7.datasource.UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[16:57:20.636] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Stopping service [Tomcat]
+[16:57:20.657] [restartedMain] [INFO ] [o.s.b.a.l.ConditionEvaluationReportLoggingListener:136 ] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[16:57:20.782] [restartedMain] [ERROR] [o.s.b.d.LoggingFailureAnalysisReporter:40  ] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userRepository in com.snowball.training.concurrent.demo.question7.datasource.UserService required a bean of type 'com.snowball.training.concurrent.demo.question7.datasource.UserRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.snowball.training.concurrent.demo.question7.datasource.UserRepository' in your configuration.
+
+[17:05:39.521] [restartedMain] [INFO ] [c.s.training.concurrent.demo.Application:55  ] - Starting Application on DESKTOP-RNEJQOJ with PID 7700 (started by A in G:\doc\培训相关\concurrent.demo)
+[17:05:39.543] [restartedMain] [INFO ] [c.s.training.concurrent.demo.Application:651 ] - No active profile set, falling back to default profiles: default
+[17:05:39.617] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[17:05:39.618] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[17:05:40.285] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:249 ] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[17:05:40.286] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:127 ] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[17:05:40.365] [restartedMain] [WARN ] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558 ] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'userRepository' defined in null: Cannot register bean definition [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] for bean 'userRepository': There is already [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] bound.
+[17:05:40.378] [restartedMain] [INFO ] [o.s.b.a.l.ConditionEvaluationReportLoggingListener:136 ] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[17:05:40.382] [restartedMain] [ERROR] [o.s.b.d.LoggingFailureAnalysisReporter:40  ] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'userRepository' could not be registered. A bean with that name has already been defined and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+[17:09:41.345] [restartedMain] [INFO ] [c.s.training.concurrent.demo.Application:55  ] - Starting Application on DESKTOP-RNEJQOJ with PID 8708 (started by A in G:\doc\培训相关\concurrent.demo)
+[17:09:41.351] [restartedMain] [INFO ] [c.s.training.concurrent.demo.Application:651 ] - No active profile set, falling back to default profiles: default
+[17:09:41.414] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[17:09:41.414] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[17:09:42.193] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:249 ] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[17:09:42.194] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:127 ] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[17:09:42.283] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:187 ] - Finished Spring Data repository scanning in 78ms. Found 2 JPA repository interfaces.
+[17:09:43.342] [restartedMain] [INFO ] [o.s.b.w.embedded.tomcat.TomcatWebServer:92  ] - Tomcat initialized with port(s): 8080 (http)
+[17:09:43.359] [restartedMain] [INFO ] [o.apache.coyote.http11.Http11NioProtocol:173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+[17:09:43.360] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Starting service [Tomcat]
+[17:09:43.361] [restartedMain] [INFO ] [org.apache.catalina.core.StandardEngine:173 ] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+[17:09:43.607] [restartedMain] [INFO ] [o.a.c.c.C.[Tomcat].[localhost].[/]:173 ] - Initializing Spring embedded WebApplicationContext
+[17:09:43.608] [restartedMain] [INFO ] [o.s.web.context.ContextLoader:284 ] - Root WebApplicationContext: initialization completed in 2194 ms
+[17:09:43.710] [restartedMain] [WARN ] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558 ] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'improperDataSourcePoolSizeController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userRepository'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.snowball.training.concurrent.demo.question7.datasource.UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[17:09:43.717] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Stopping service [Tomcat]
+[17:09:43.742] [restartedMain] [INFO ] [o.s.b.a.l.ConditionEvaluationReportLoggingListener:136 ] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[17:09:43.949] [restartedMain] [ERROR] [o.s.b.d.LoggingFailureAnalysisReporter:40  ] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userRepository in com.snowball.training.concurrent.demo.question7.datasource.UserService required a bean of type 'com.snowball.training.concurrent.demo.question7.datasource.UserRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.snowball.training.concurrent.demo.question7.datasource.UserRepository' in your configuration.
+
+[17:14:47.716] [restartedMain] [INFO ] [c.s.training.concurrent.demo.Application:55  ] - Starting Application on DESKTOP-RNEJQOJ with PID 26436 (started by A in G:\doc\培训相关\concurrent.demo)
+[17:14:47.721] [restartedMain] [INFO ] [c.s.training.concurrent.demo.Application:651 ] - No active profile set, falling back to default profiles: default
+[17:14:47.776] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[17:14:47.777] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[17:14:48.586] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:249 ] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[17:14:48.587] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:127 ] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[17:14:48.701] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:187 ] - Finished Spring Data repository scanning in 100ms. Found 2 JPA repository interfaces.
+[17:14:49.464] [restartedMain] [INFO ] [o.s.b.w.embedded.tomcat.TomcatWebServer:92  ] - Tomcat initialized with port(s): 8080 (http)
+[17:14:49.471] [restartedMain] [INFO ] [o.apache.coyote.http11.Http11NioProtocol:173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+[17:14:49.472] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Starting service [Tomcat]
+[17:14:49.472] [restartedMain] [INFO ] [org.apache.catalina.core.StandardEngine:173 ] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+[17:14:49.571] [restartedMain] [INFO ] [o.a.c.c.C.[Tomcat].[localhost].[/]:173 ] - Initializing Spring embedded WebApplicationContext
+[17:14:49.571] [restartedMain] [INFO ] [o.s.web.context.ContextLoader:284 ] - Root WebApplicationContext: initialization completed in 1794 ms
+[17:14:49.665] [restartedMain] [WARN ] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558 ] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'improperDataSourcePoolSizeController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository': Cannot create inner bean '(inner bean)#43f90a56' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#43f90a56': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityManagerFactory' available
+[17:14:49.668] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Stopping service [Tomcat]
+[17:14:49.685] [restartedMain] [INFO ] [o.s.b.a.l.ConditionEvaluationReportLoggingListener:136 ] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[17:14:49.737] [restartedMain] [ERROR] [o.s.b.d.LoggingFailureAnalysisReporter:40  ] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userRepository in com.snowball.training.concurrent.demo.question7.datasource.UserService required a bean named 'entityManagerFactory' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean named 'entityManagerFactory' in your configuration.
+
+[17:20:05.946] [restartedMain] [INFO ] [c.s.training.concurrent.demo.Application:55  ] - Starting Application on DESKTOP-RNEJQOJ with PID 17180 (started by A in G:\doc\培训相关\concurrent.demo)
+[17:20:05.950] [restartedMain] [INFO ] [c.s.training.concurrent.demo.Application:651 ] - No active profile set, falling back to default profiles: default
+[17:20:06.003] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[17:20:06.003] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[17:20:06.764] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:249 ] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[17:20:06.765] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:127 ] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[17:20:06.846] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:187 ] - Finished Spring Data repository scanning in 72ms. Found 2 JPA repository interfaces.
+[17:20:07.631] [restartedMain] [INFO ] [o.s.b.w.embedded.tomcat.TomcatWebServer:92  ] - Tomcat initialized with port(s): 8080 (http)
+[17:20:07.641] [restartedMain] [INFO ] [o.apache.coyote.http11.Http11NioProtocol:173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+[17:20:07.642] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Starting service [Tomcat]
+[17:20:07.642] [restartedMain] [INFO ] [org.apache.catalina.core.StandardEngine:173 ] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+[17:20:07.756] [restartedMain] [INFO ] [o.a.c.c.C.[Tomcat].[localhost].[/]:173 ] - Initializing Spring embedded WebApplicationContext
+[17:20:07.756] [restartedMain] [INFO ] [o.s.web.context.ContextLoader:284 ] - Root WebApplicationContext: initialization completed in 1753 ms
+[17:20:07.858] [restartedMain] [WARN ] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558 ] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'improperDataSourcePoolSizeController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository': Cannot create inner bean '(inner bean)#3924541' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#3924541': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityManagerFactory' available
+[17:20:07.861] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Stopping service [Tomcat]
+[17:20:07.875] [restartedMain] [INFO ] [o.s.b.a.l.ConditionEvaluationReportLoggingListener:136 ] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[17:20:07.938] [restartedMain] [ERROR] [o.s.b.d.LoggingFailureAnalysisReporter:40  ] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userRepository in com.snowball.training.concurrent.demo.question7.datasource.UserService required a bean named 'entityManagerFactory' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean named 'entityManagerFactory' in your configuration.
+
+[17:20:58.226] [restartedMain] [INFO ] [c.s.training.concurrent.demo.Application:55  ] - Starting Application on DESKTOP-RNEJQOJ with PID 15944 (G:\doc\培训相关\concurrent.demo\target\classes started by A in G:\doc\培训相关\concurrent.demo)
+[17:20:58.230] [restartedMain] [INFO ] [c.s.training.concurrent.demo.Application:651 ] - No active profile set, falling back to default profiles: default
+[17:20:58.282] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[17:20:58.283] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[17:20:59.078] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:249 ] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[17:20:59.078] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:127 ] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[17:20:59.144] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:187 ] - Finished Spring Data repository scanning in 57ms. Found 2 JPA repository interfaces.
+[17:20:59.790] [restartedMain] [INFO ] [o.s.b.w.embedded.tomcat.TomcatWebServer:108 ] - Tomcat initialized with port(s): 8080 (http)
+[17:20:59.802] [restartedMain] [INFO ] [o.apache.coyote.http11.Http11NioProtocol:173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+[17:20:59.803] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Starting service [Tomcat]
+[17:20:59.803] [restartedMain] [INFO ] [org.apache.catalina.core.StandardEngine:173 ] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+[17:20:59.933] [restartedMain] [INFO ] [o.a.c.c.C.[Tomcat].[localhost].[/]:173 ] - Initializing Spring embedded WebApplicationContext
+[17:20:59.934] [restartedMain] [INFO ] [o.s.web.context.ContextLoader:284 ] - Root WebApplicationContext: initialization completed in 1651 ms
+[17:21:00.047] [restartedMain] [WARN ] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558 ] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'improperDataSourcePoolSizeController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.snowball.training.concurrent.demo.question7.datasource.UserRepository defined in @EnableJpaRepositories declared on Application: Cannot create inner bean '(inner bean)#5b7d6804' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#5b7d6804': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityManagerFactory' available
+[17:21:00.049] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Stopping service [Tomcat]
+[17:21:00.068] [restartedMain] [INFO ] [o.s.b.a.l.ConditionEvaluationReportLoggingListener:136 ] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[17:21:00.142] [restartedMain] [ERROR] [o.s.b.d.LoggingFailureAnalysisReporter:40  ] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userRepository in com.snowball.training.concurrent.demo.question7.datasource.UserService required a bean named 'entityManagerFactory' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean named 'entityManagerFactory' in your configuration.
+
+[17:21:00.148] [restartedMain] [WARN ] [o.springframework.boot.SpringApplication:819 ] - Unable to close ApplicationContext
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springApplicationAdminRegistrar' defined in class path resource [org/springframework/boot/autoconfigure/admin/SpringApplicationAdminJmxAutoConfiguration.class]: Unsatisfied dependency expressed through method 'springApplicationAdminRegistrar' parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.core.env.Environment' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:245)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:197)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:134)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:81)
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:67)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:167)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:978)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:814)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.snowball.training.concurrent.demo.Application.main(Application.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.core.env.Environment' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1716)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1272)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:885)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789)
+	... 28 common frames omitted
+[17:21:50.667] [restartedMain] [INFO ] [c.s.training.concurrent.demo.Application:55  ] - Starting Application on DESKTOP-RNEJQOJ with PID 20016 (G:\doc\培训相关\concurrent.demo\target\classes started by A in G:\doc\培训相关\concurrent.demo)
+[17:21:50.670] [restartedMain] [INFO ] [c.s.training.concurrent.demo.Application:651 ] - No active profile set, falling back to default profiles: default
+[17:21:50.725] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[17:21:50.726] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[17:21:51.456] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:249 ] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[17:21:51.456] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:127 ] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[17:21:51.519] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:187 ] - Finished Spring Data repository scanning in 55ms. Found 2 JPA repository interfaces.
+[17:21:52.117] [restartedMain] [INFO ] [o.s.b.w.embedded.tomcat.TomcatWebServer:108 ] - Tomcat initialized with port(s): 8080 (http)
+[17:21:52.125] [restartedMain] [INFO ] [o.apache.coyote.http11.Http11NioProtocol:173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+[17:21:52.125] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Starting service [Tomcat]
+[17:21:52.126] [restartedMain] [INFO ] [org.apache.catalina.core.StandardEngine:173 ] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+[17:21:52.227] [restartedMain] [INFO ] [o.a.c.c.C.[Tomcat].[localhost].[/]:173 ] - Initializing Spring embedded WebApplicationContext
+[17:21:52.227] [restartedMain] [INFO ] [o.s.web.context.ContextLoader:284 ] - Root WebApplicationContext: initialization completed in 1501 ms
+[17:21:52.299] [restartedMain] [WARN ] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558 ] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'improperDataSourcePoolSizeController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userRepository'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.snowball.training.concurrent.demo.question7.datasource.UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[17:21:52.301] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Stopping service [Tomcat]
+[17:21:52.316] [restartedMain] [INFO ] [o.s.b.a.l.ConditionEvaluationReportLoggingListener:136 ] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[17:21:52.477] [restartedMain] [ERROR] [o.s.b.d.LoggingFailureAnalysisReporter:40  ] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userRepository in com.snowball.training.concurrent.demo.question7.datasource.UserService required a bean of type 'com.snowball.training.concurrent.demo.question7.datasource.UserRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.snowball.training.concurrent.demo.question7.datasource.UserRepository' in your configuration.
+
+[17:21:52.483] [restartedMain] [WARN ] [o.springframework.boot.SpringApplication:819 ] - Unable to close ApplicationContext
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springApplicationAdminRegistrar' defined in class path resource [org/springframework/boot/autoconfigure/admin/SpringApplicationAdminJmxAutoConfiguration.class]: Unsatisfied dependency expressed through method 'springApplicationAdminRegistrar' parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.core.env.Environment' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:245)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:197)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:134)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:81)
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:67)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:167)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:978)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:814)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.snowball.training.concurrent.demo.Application.main(Application.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.core.env.Environment' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1716)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1272)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:885)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789)
+	... 28 common frames omitted
+[17:27:08.632] [restartedMain] [INFO ] [c.s.training.concurrent.demo.Application:55  ] - Starting Application on DESKTOP-RNEJQOJ with PID 7580 (G:\doc\培训相关\concurrent.demo\target\classes started by A in G:\doc\培训相关\concurrent.demo)
+[17:27:08.637] [restartedMain] [INFO ] [c.s.training.concurrent.demo.Application:651 ] - No active profile set, falling back to default profiles: default
+[17:27:08.690] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[17:27:08.690] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[17:27:10.050] [restartedMain] [INFO ] [o.s.b.w.embedded.tomcat.TomcatWebServer:108 ] - Tomcat initialized with port(s): 8080 (http)
+[17:27:10.058] [restartedMain] [INFO ] [o.apache.coyote.http11.Http11NioProtocol:173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+[17:27:10.058] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Starting service [Tomcat]
+[17:27:10.059] [restartedMain] [INFO ] [org.apache.catalina.core.StandardEngine:173 ] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+[17:27:10.168] [restartedMain] [INFO ] [o.a.c.c.C.[Tomcat].[localhost].[/]:173 ] - Initializing Spring embedded WebApplicationContext
+[17:27:10.168] [restartedMain] [INFO ] [o.s.web.context.ContextLoader:284 ] - Root WebApplicationContext: initialization completed in 1477 ms
+[17:27:10.234] [restartedMain] [WARN ] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558 ] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'improperDataSourcePoolSizeController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userRepository'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.snowball.training.concurrent.demo.question7.datasource.UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[17:27:10.237] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Stopping service [Tomcat]
+[17:27:10.251] [restartedMain] [INFO ] [o.s.b.a.l.ConditionEvaluationReportLoggingListener:136 ] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[17:27:10.372] [restartedMain] [ERROR] [o.s.b.d.LoggingFailureAnalysisReporter:40  ] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userRepository in com.snowball.training.concurrent.demo.question7.datasource.UserService required a bean of type 'com.snowball.training.concurrent.demo.question7.datasource.UserRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.snowball.training.concurrent.demo.question7.datasource.UserRepository' in your configuration.
+
+[17:27:10.377] [restartedMain] [WARN ] [o.springframework.boot.SpringApplication:819 ] - Unable to close ApplicationContext
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springApplicationAdminRegistrar' defined in class path resource [org/springframework/boot/autoconfigure/admin/SpringApplicationAdminJmxAutoConfiguration.class]: Unsatisfied dependency expressed through method 'springApplicationAdminRegistrar' parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.core.env.Environment' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:245)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:197)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:134)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:81)
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:67)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:167)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:978)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:814)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.snowball.training.concurrent.demo.Application.main(Application.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.core.env.Environment' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1716)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1272)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:885)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789)
+	... 28 common frames omitted
+[17:27:44.343] [restartedMain] [INFO ] [c.s.training.concurrent.demo.Application:55  ] - Starting Application on DESKTOP-RNEJQOJ with PID 8948 (G:\doc\培训相关\concurrent.demo\target\classes started by A in G:\doc\培训相关\concurrent.demo)
+[17:27:44.347] [restartedMain] [INFO ] [c.s.training.concurrent.demo.Application:651 ] - No active profile set, falling back to default profiles: default
+[17:27:44.400] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[17:27:44.400] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[17:27:45.287] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:249 ] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[17:27:45.288] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:127 ] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[17:27:45.385] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:187 ] - Finished Spring Data repository scanning in 86ms. Found 2 JPA repository interfaces.
+[17:27:46.241] [restartedMain] [INFO ] [o.s.b.w.embedded.tomcat.TomcatWebServer:108 ] - Tomcat initialized with port(s): 8080 (http)
+[17:27:46.254] [restartedMain] [INFO ] [o.apache.coyote.http11.Http11NioProtocol:173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+[17:27:46.255] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Starting service [Tomcat]
+[17:27:46.256] [restartedMain] [INFO ] [org.apache.catalina.core.StandardEngine:173 ] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+[17:27:46.394] [restartedMain] [INFO ] [o.a.c.c.C.[Tomcat].[localhost].[/]:173 ] - Initializing Spring embedded WebApplicationContext
+[17:27:46.395] [restartedMain] [INFO ] [o.s.web.context.ContextLoader:284 ] - Root WebApplicationContext: initialization completed in 1994 ms
+[17:27:46.520] [restartedMain] [WARN ] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558 ] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'improperDataSourcePoolSizeController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.snowball.training.concurrent.demo.question7.datasource.UserRepository defined in @EnableJpaRepositories declared on Application: Cannot create inner bean '(inner bean)#1cb95311' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#1cb95311': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityManagerFactory' available
+[17:27:46.523] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Stopping service [Tomcat]
+[17:27:46.548] [restartedMain] [INFO ] [o.s.b.a.l.ConditionEvaluationReportLoggingListener:136 ] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[17:27:46.628] [restartedMain] [ERROR] [o.s.b.d.LoggingFailureAnalysisReporter:40  ] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userRepository in com.snowball.training.concurrent.demo.question7.datasource.UserService required a bean named 'entityManagerFactory' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean named 'entityManagerFactory' in your configuration.
+
+[17:27:46.633] [restartedMain] [WARN ] [o.springframework.boot.SpringApplication:819 ] - Unable to close ApplicationContext
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springApplicationAdminRegistrar' defined in class path resource [org/springframework/boot/autoconfigure/admin/SpringApplicationAdminJmxAutoConfiguration.class]: Unsatisfied dependency expressed through method 'springApplicationAdminRegistrar' parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.core.env.Environment' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:245)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:197)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:134)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:81)
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:67)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:167)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:978)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:814)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.snowball.training.concurrent.demo.Application.main(Application.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.core.env.Environment' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1716)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1272)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:885)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789)
+	... 28 common frames omitted
+[17:29:01.851] [restartedMain] [INFO ] [c.s.training.concurrent.demo.Application:55  ] - Starting Application on DESKTOP-RNEJQOJ with PID 15896 (started by A in G:\doc\培训相关\concurrent.demo)
+[17:29:01.857] [restartedMain] [INFO ] [c.s.training.concurrent.demo.Application:651 ] - No active profile set, falling back to default profiles: default
+[17:29:01.919] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[17:29:01.920] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[17:29:02.686] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:249 ] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[17:29:02.687] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:127 ] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[17:29:02.771] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:187 ] - Finished Spring Data repository scanning in 72ms. Found 2 JPA repository interfaces.
+[17:29:03.517] [restartedMain] [INFO ] [o.s.b.w.embedded.tomcat.TomcatWebServer:92  ] - Tomcat initialized with port(s): 8080 (http)
+[17:29:03.525] [restartedMain] [INFO ] [o.apache.coyote.http11.Http11NioProtocol:173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+[17:29:03.526] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Starting service [Tomcat]
+[17:29:03.526] [restartedMain] [INFO ] [org.apache.catalina.core.StandardEngine:173 ] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+[17:29:03.646] [restartedMain] [INFO ] [o.a.c.c.C.[Tomcat].[localhost].[/]:173 ] - Initializing Spring embedded WebApplicationContext
+[17:29:03.647] [restartedMain] [INFO ] [o.s.web.context.ContextLoader:284 ] - Root WebApplicationContext: initialization completed in 1727 ms
+[17:29:03.715] [restartedMain] [WARN ] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558 ] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'improperDataSourcePoolSizeController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userRepository'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.snowball.training.concurrent.demo.question7.datasource.UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[17:29:03.718] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Stopping service [Tomcat]
+[17:29:03.735] [restartedMain] [INFO ] [o.s.b.a.l.ConditionEvaluationReportLoggingListener:136 ] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[17:29:03.866] [restartedMain] [ERROR] [o.s.b.d.LoggingFailureAnalysisReporter:40  ] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userRepository in com.snowball.training.concurrent.demo.question7.datasource.UserService required a bean of type 'com.snowball.training.concurrent.demo.question7.datasource.UserRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.snowball.training.concurrent.demo.question7.datasource.UserRepository' in your configuration.
+
+[12:10:57.869] [restartedMain] [INFO ] [c.s.training.concurrent.demo.Application:55  ] - Starting Application on DESKTOP-RNEJQOJ with PID 16252 (started by A in G:\doc\培训相关\concurrent.demo)
+[12:10:57.874] [restartedMain] [INFO ] [c.s.training.concurrent.demo.Application:651 ] - No active profile set, falling back to default profiles: default
+[12:10:57.928] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[12:10:57.929] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[12:10:58.490] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:249 ] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[12:10:58.490] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:127 ] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[12:10:58.564] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:187 ] - Finished Spring Data repository scanning in 62ms. Found 2 JPA repository interfaces.
+[12:10:59.200] [restartedMain] [INFO ] [o.s.b.w.embedded.tomcat.TomcatWebServer:92  ] - Tomcat initialized with port(s): 8080 (http)
+[12:10:59.208] [restartedMain] [INFO ] [o.apache.coyote.http11.Http11NioProtocol:173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+[12:10:59.209] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Starting service [Tomcat]
+[12:10:59.209] [restartedMain] [INFO ] [org.apache.catalina.core.StandardEngine:173 ] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+[12:10:59.317] [restartedMain] [INFO ] [o.a.c.c.C.[Tomcat].[localhost].[/]:173 ] - Initializing Spring embedded WebApplicationContext
+[12:10:59.317] [restartedMain] [INFO ] [o.s.web.context.ContextLoader:284 ] - Root WebApplicationContext: initialization completed in 1388 ms
+[12:10:59.407] [restartedMain] [WARN ] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558 ] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'improperDataSourcePoolSizeController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository': Cannot create inner bean '(inner bean)#11d6b35f' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#11d6b35f': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityManagerFactory' available
+[12:10:59.410] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Stopping service [Tomcat]
+[12:10:59.423] [restartedMain] [INFO ] [o.s.b.a.l.ConditionEvaluationReportLoggingListener:136 ] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[12:10:59.485] [restartedMain] [ERROR] [o.s.b.d.LoggingFailureAnalysisReporter:40  ] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userRepository in com.snowball.training.concurrent.demo.question7.datasource.UserService required a bean named 'entityManagerFactory' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean named 'entityManagerFactory' in your configuration.
+
+[10:05:36.491] [restartedMain] [INFO ] [c.s.t.c.d.q.QuestionSevenApplication:55  ] - Starting QuestionSevenApplication on DESKTOP-RNEJQOJ with PID 14764 (started by A in G:\doc\培训相关\concurrent.demo)
+[10:05:36.504] [restartedMain] [INFO ] [c.s.t.c.d.q.QuestionSevenApplication:651 ] - No active profile set, falling back to default profiles: default
+[10:05:36.667] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[10:05:36.668] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[10:05:37.780] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:249 ] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[10:05:37.781] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:127 ] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[10:05:37.917] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:187 ] - Finished Spring Data repository scanning in 116ms. Found 2 JPA repository interfaces.
+[10:05:37.919] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:249 ] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[10:05:37.919] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:127 ] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[10:05:37.947] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:187 ] - Finished Spring Data repository scanning in 27ms. Found 2 JPA repository interfaces.
+[10:05:41.495] [restartedMain] [INFO ] [o.s.b.w.embedded.tomcat.TomcatWebServer:92  ] - Tomcat initialized with port(s): 8080 (http)
+[10:05:41.545] [restartedMain] [INFO ] [o.apache.coyote.http11.Http11NioProtocol:173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+[10:05:41.547] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Starting service [Tomcat]
+[10:05:41.549] [restartedMain] [INFO ] [org.apache.catalina.core.StandardEngine:173 ] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+[10:05:42.086] [restartedMain] [INFO ] [o.a.c.c.C.[Tomcat].[localhost].[/]:173 ] - Initializing Spring embedded WebApplicationContext
+[10:05:42.087] [restartedMain] [INFO ] [o.s.web.context.ContextLoader:284 ] - Root WebApplicationContext: initialization completed in 5419 ms
+[10:05:42.955] [restartedMain] [WARN ] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558 ] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'improperDataSourcePoolSizeController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository': Cannot create inner bean '(inner bean)#7a1a5c51' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#7a1a5c51': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityManagerFactory' available
+[10:05:42.974] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Stopping service [Tomcat]
+[10:05:43.095] [restartedMain] [INFO ] [o.s.b.a.l.ConditionEvaluationReportLoggingListener:136 ] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[10:05:43.835] [restartedMain] [ERROR] [o.s.b.d.LoggingFailureAnalysisReporter:40  ] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userRepository in com.snowball.training.concurrent.demo.question7.datasource.UserService required a bean named 'entityManagerFactory' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean named 'entityManagerFactory' in your configuration.
+
+[10:47:17.628] [restartedMain] [INFO ] [c.s.t.c.d.q.QuestionSevenApplication:55  ] - Starting QuestionSevenApplication on DESKTOP-RNEJQOJ with PID 17460 (started by A in G:\doc\培训相关\concurrent.demo)
+[10:47:17.636] [restartedMain] [INFO ] [c.s.t.c.d.q.QuestionSevenApplication:651 ] - No active profile set, falling back to default profiles: default
+[10:47:17.740] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[10:47:17.740] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[10:47:18.625] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:249 ] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[10:47:18.625] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:127 ] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[10:47:18.728] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:187 ] - Finished Spring Data repository scanning in 88ms. Found 2 JPA repository interfaces.
+[10:47:18.729] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:249 ] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[10:47:18.730] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:127 ] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[10:47:18.754] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:187 ] - Finished Spring Data repository scanning in 24ms. Found 2 JPA repository interfaces.
+[10:47:21.946] [restartedMain] [INFO ] [o.s.b.w.embedded.tomcat.TomcatWebServer:92  ] - Tomcat initialized with port(s): 8080 (http)
+[10:47:22.001] [restartedMain] [INFO ] [o.apache.coyote.http11.Http11NioProtocol:173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+[10:47:22.004] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Starting service [Tomcat]
+[10:47:22.005] [restartedMain] [INFO ] [org.apache.catalina.core.StandardEngine:173 ] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+[10:47:22.547] [restartedMain] [INFO ] [o.a.c.c.C.[Tomcat].[localhost].[/]:173 ] - Initializing Spring embedded WebApplicationContext
+[10:47:22.548] [restartedMain] [INFO ] [o.s.web.context.ContextLoader:284 ] - Root WebApplicationContext: initialization completed in 4807 ms
+[10:47:23.260] [restartedMain] [WARN ] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558 ] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'improperDataSourcePoolSizeController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository': Cannot create inner bean '(inner bean)#72f23826' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#72f23826': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityManagerFactory' available
+[10:47:23.273] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Stopping service [Tomcat]
+[10:47:23.362] [restartedMain] [INFO ] [o.s.b.a.l.ConditionEvaluationReportLoggingListener:136 ] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[10:47:23.974] [restartedMain] [ERROR] [o.s.b.d.LoggingFailureAnalysisReporter:40  ] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userRepository in com.snowball.training.concurrent.demo.question7.datasource.UserService required a bean named 'entityManagerFactory' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean named 'entityManagerFactory' in your configuration.
+
+[10:49:18.736] [restartedMain] [INFO ] [c.s.t.c.d.q.QuestionSevenApplication:55  ] - Starting QuestionSevenApplication on DESKTOP-RNEJQOJ with PID 13760 (started by A in G:\doc\培训相关\concurrent.demo)
+[10:49:18.752] [restartedMain] [INFO ] [c.s.t.c.d.q.QuestionSevenApplication:651 ] - No active profile set, falling back to default profiles: default
+[10:49:18.860] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[10:49:18.861] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[10:49:19.674] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:249 ] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[10:49:19.675] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:127 ] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[10:49:19.699] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:187 ] - Finished Spring Data repository scanning in 12ms. Found 0 JPA repository interfaces.
+[10:49:19.700] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:249 ] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[10:49:19.701] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:127 ] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[10:49:19.707] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:187 ] - Finished Spring Data repository scanning in 5ms. Found 0 JPA repository interfaces.
+[10:49:20.740] [restartedMain] [INFO ] [o.s.b.w.embedded.tomcat.TomcatWebServer:92  ] - Tomcat initialized with port(s): 8080 (http)
+[10:49:20.756] [restartedMain] [INFO ] [o.apache.coyote.http11.Http11NioProtocol:173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+[10:49:20.758] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Starting service [Tomcat]
+[10:49:20.758] [restartedMain] [INFO ] [org.apache.catalina.core.StandardEngine:173 ] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+[10:49:20.951] [restartedMain] [INFO ] [o.a.c.c.C.[Tomcat].[localhost].[/]:173 ] - Initializing Spring embedded WebApplicationContext
+[10:49:20.952] [restartedMain] [INFO ] [o.s.web.context.ContextLoader:284 ] - Root WebApplicationContext: initialization completed in 2091 ms
+[10:49:22.894] [restartedMain] [WARN ] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558 ] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twoTimeoutConfigController': Unsatisfied dependency expressed through field 'jdbcTemplate'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.jdbc.core.JdbcTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[10:49:22.897] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Stopping service [Tomcat]
+[10:49:22.913] [restartedMain] [INFO ] [o.s.b.a.l.ConditionEvaluationReportLoggingListener:136 ] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[10:49:23.041] [restartedMain] [ERROR] [o.s.b.d.LoggingFailureAnalysisReporter:40  ] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field jdbcTemplate in com.snowball.training.concurrent.demo.question7.twotimeoutconfig.TwoTimeoutConfigController required a bean of type 'org.springframework.jdbc.core.JdbcTemplate' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.jdbc.core.JdbcTemplate' in your configuration.
+
+[10:58:25.666] [restartedMain] [INFO ] [c.s.t.c.d.q.QuestionSevenApplication:55  ] - Starting QuestionSevenApplication on DESKTOP-RNEJQOJ with PID 1888 (started by A in G:\doc\培训相关\concurrent.demo)
+[10:58:25.684] [restartedMain] [INFO ] [c.s.t.c.d.q.QuestionSevenApplication:651 ] - No active profile set, falling back to default profiles: default
+[10:58:25.953] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[10:58:25.954] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[10:58:26.952] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:249 ] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[10:58:26.952] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:127 ] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[10:58:26.994] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:187 ] - Finished Spring Data repository scanning in 28ms. Found 0 JPA repository interfaces.
+[10:58:27.185] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:249 ] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[10:58:27.186] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:127 ] - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[10:58:27.198] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:187 ] - Finished Spring Data repository scanning in 12ms. Found 0 JDBC repository interfaces.
+[10:58:27.685] [restartedMain] [INFO ] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 ] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[10:58:28.117] [restartedMain] [INFO ] [o.s.b.w.embedded.tomcat.TomcatWebServer:92  ] - Tomcat initialized with port(s): 8080 (http)
+[10:58:28.139] [restartedMain] [INFO ] [o.apache.coyote.http11.Http11NioProtocol:173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+[10:58:28.140] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Starting service [Tomcat]
+[10:58:28.141] [restartedMain] [INFO ] [org.apache.catalina.core.StandardEngine:173 ] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+[10:58:28.328] [restartedMain] [INFO ] [o.a.c.c.C.[Tomcat].[localhost].[/]:173 ] - Initializing Spring embedded WebApplicationContext
+[10:58:28.329] [restartedMain] [INFO ] [o.s.web.context.ContextLoader:284 ] - Root WebApplicationContext: initialization completed in 2375 ms
+[10:58:30.544] [restartedMain] [INFO ] [o.s.s.concurrent.ThreadPoolTaskExecutor:171 ] - Initializing ExecutorService 'applicationTaskExecutor'
+[10:58:30.970] [restartedMain] [INFO ] [o.s.b.d.a.OptionalLiveReloadServer:58  ] - LiveReload server is running on port 35729
+[10:58:31.002] [restartedMain] [INFO ] [o.apache.coyote.http11.Http11NioProtocol:173 ] - Starting ProtocolHandler ["http-nio-8080"]
+[10:58:31.065] [restartedMain] [INFO ] [o.s.b.w.embedded.tomcat.TomcatWebServer:204 ] - Tomcat started on port(s): 8080 (http) with context path ''
+[10:58:31.072] [restartedMain] [INFO ] [c.s.t.c.d.q.QuestionSevenApplication:61  ] - Started QuestionSevenApplication in 6.361 seconds (JVM running for 9.09)
+[10:58:49.368] [SpringContextShutdownHook] [INFO ] [o.s.s.concurrent.ThreadPoolTaskExecutor:208 ] - Shutting down ExecutorService 'applicationTaskExecutor'
+[10:59:30.526] [restartedMain] [INFO ] [c.s.t.c.d.q.QuestionSevenApplication:55  ] - Starting QuestionSevenApplication on DESKTOP-RNEJQOJ with PID 18508 (started by A in G:\doc\培训相关\concurrent.demo)
+[10:59:30.530] [restartedMain] [INFO ] [c.s.t.c.d.q.QuestionSevenApplication:651 ] - No active profile set, falling back to default profiles: default
+[10:59:30.604] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[10:59:30.604] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[10:59:31.306] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:249 ] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[10:59:31.306] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:127 ] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[10:59:31.389] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:187 ] - Finished Spring Data repository scanning in 74ms. Found 1 JPA repository interfaces.
+[10:59:31.598] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:249 ] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[10:59:31.599] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:127 ] - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[10:59:31.617] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationExtensionSupport:348 ] - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.snowball.training.concurrent.demo.question7.datasource.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+[10:59:31.622] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationExtensionSupport:348 ] - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.snowball.training.concurrent.demo.question7.datasource.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+[10:59:31.622] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:187 ] - Finished Spring Data repository scanning in 23ms. Found 0 JDBC repository interfaces.
+[10:59:33.064] [restartedMain] [INFO ] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 ] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[10:59:35.948] [restartedMain] [INFO ] [o.s.b.w.embedded.tomcat.TomcatWebServer:92  ] - Tomcat initialized with port(s): 8080 (http)
+[10:59:35.983] [restartedMain] [INFO ] [o.apache.coyote.http11.Http11NioProtocol:173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+[10:59:35.985] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Starting service [Tomcat]
+[10:59:35.986] [restartedMain] [INFO ] [org.apache.catalina.core.StandardEngine:173 ] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+[10:59:36.380] [restartedMain] [INFO ] [o.a.c.c.C.[Tomcat].[localhost].[/]:173 ] - Initializing Spring embedded WebApplicationContext
+[10:59:36.381] [restartedMain] [INFO ] [o.s.web.context.ContextLoader:284 ] - Root WebApplicationContext: initialization completed in 5776 ms
+[10:59:36.944] [restartedMain] [WARN ] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558 ] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'improperDataSourcePoolSizeController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository': Cannot create inner bean '(inner bean)#7c4a0beb' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#7c4a0beb': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityManagerFactory' available
+[10:59:36.955] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Stopping service [Tomcat]
+[10:59:37.040] [restartedMain] [INFO ] [o.s.b.a.l.ConditionEvaluationReportLoggingListener:136 ] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[10:59:37.603] [restartedMain] [ERROR] [o.s.b.d.LoggingFailureAnalysisReporter:40  ] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userRepository in com.snowball.training.concurrent.demo.question7.datasource.UserService required a bean named 'entityManagerFactory' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean named 'entityManagerFactory' in your configuration.
+
+[11:00:12.488] [restartedMain] [INFO ] [c.s.t.c.d.q.QuestionSevenApplication:55  ] - Starting QuestionSevenApplication on DESKTOP-RNEJQOJ with PID 12636 (started by A in G:\doc\培训相关\concurrent.demo)
+[11:00:12.502] [restartedMain] [INFO ] [c.s.t.c.d.q.QuestionSevenApplication:651 ] - No active profile set, falling back to default profiles: default
+[11:00:12.642] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[11:00:12.643] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[11:00:13.550] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:249 ] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[11:00:13.550] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:127 ] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[11:00:13.613] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:187 ] - Finished Spring Data repository scanning in 48ms. Found 0 JPA repository interfaces.
+[11:00:13.853] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:249 ] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[11:00:13.854] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:127 ] - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[11:00:13.866] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:187 ] - Finished Spring Data repository scanning in 12ms. Found 0 JDBC repository interfaces.
+[11:00:14.342] [restartedMain] [INFO ] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 ] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11:00:14.732] [restartedMain] [INFO ] [o.s.b.w.embedded.tomcat.TomcatWebServer:92  ] - Tomcat initialized with port(s): 8080 (http)
+[11:00:14.744] [restartedMain] [INFO ] [o.apache.coyote.http11.Http11NioProtocol:173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+[11:00:14.745] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Starting service [Tomcat]
+[11:00:14.745] [restartedMain] [INFO ] [org.apache.catalina.core.StandardEngine:173 ] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+[11:00:14.867] [restartedMain] [INFO ] [o.a.c.c.C.[Tomcat].[localhost].[/]:173 ] - Initializing Spring embedded WebApplicationContext
+[11:00:14.867] [restartedMain] [INFO ] [o.s.web.context.ContextLoader:284 ] - Root WebApplicationContext: initialization completed in 2223 ms
+[11:00:14.935] [restartedMain] [INFO ] [o.s.b.f.a.AutowiredAnnotationBeanPostProcessor:502 ] - Autowired annotation should only be used on methods with parameters: public com.snowball.training.concurrent.demo.question7.datasource.User com.snowball.training.concurrent.demo.question7.datasource.UserService.register()
+[11:12:18.361] [restartedMain] [INFO ] [c.s.t.c.d.q.QuestionSevenApplication:55  ] - Starting QuestionSevenApplication on DESKTOP-RNEJQOJ with PID 2944 (started by A in G:\doc\培训相关\concurrent.demo)
+[11:12:18.371] [restartedMain] [INFO ] [c.s.t.c.d.q.QuestionSevenApplication:651 ] - No active profile set, falling back to default profiles: default
+[11:12:18.539] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[11:12:18.540] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[11:12:19.320] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:249 ] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[11:12:19.320] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:127 ] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[11:12:19.352] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:187 ] - Finished Spring Data repository scanning in 22ms. Found 0 JPA repository interfaces.
+[11:12:19.508] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:249 ] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[11:12:19.508] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:127 ] - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[11:12:19.520] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:187 ] - Finished Spring Data repository scanning in 11ms. Found 0 JDBC repository interfaces.
+[11:12:19.916] [restartedMain] [INFO ] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 ] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[11:12:20.532] [restartedMain] [INFO ] [o.s.b.w.embedded.tomcat.TomcatWebServer:92  ] - Tomcat initialized with port(s): 8080 (http)
+[11:12:20.549] [restartedMain] [INFO ] [o.apache.coyote.http11.Http11NioProtocol:173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+[11:12:20.550] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Starting service [Tomcat]
+[11:12:20.552] [restartedMain] [INFO ] [org.apache.catalina.core.StandardEngine:173 ] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+[11:12:20.746] [restartedMain] [INFO ] [o.a.c.c.C.[Tomcat].[localhost].[/]:173 ] - Initializing Spring embedded WebApplicationContext
+[11:12:20.747] [restartedMain] [INFO ] [o.s.web.context.ContextLoader:284 ] - Root WebApplicationContext: initialization completed in 2207 ms
+[11:12:20.850] [restartedMain] [INFO ] [o.s.b.f.a.AutowiredAnnotationBeanPostProcessor:502 ] - Autowired annotation should only be used on methods with parameters: public com.snowball.training.concurrent.demo.question7.datasource.User com.snowball.training.concurrent.demo.question7.datasource.UserService.register()
+[11:12:28.173] [restartedMain] [INFO ] [o.s.s.concurrent.ThreadPoolTaskExecutor:171 ] - Initializing ExecutorService 'applicationTaskExecutor'
+[11:12:28.459] [restartedMain] [INFO ] [o.s.b.d.a.OptionalLiveReloadServer:58  ] - LiveReload server is running on port 35729
+[11:12:28.488] [restartedMain] [INFO ] [o.apache.coyote.http11.Http11NioProtocol:173 ] - Starting ProtocolHandler ["http-nio-8080"]
+[11:12:28.526] [restartedMain] [INFO ] [o.s.b.w.embedded.tomcat.TomcatWebServer:204 ] - Tomcat started on port(s): 8080 (http) with context path ''
+[11:12:28.530] [restartedMain] [INFO ] [c.s.t.c.d.q.QuestionSevenApplication:61  ] - Started QuestionSevenApplication in 11.124 seconds (JVM running for 13.831)
+[11:13:58.576] [http-nio-8080-exec-3] [INFO ] [o.a.c.c.C.[Tomcat].[localhost].[/]:173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[11:13:58.576] [http-nio-8080-exec-3] [INFO ] [o.s.web.servlet.DispatcherServlet:525 ] - Initializing Servlet 'dispatcherServlet'
+[11:13:58.584] [http-nio-8080-exec-3] [INFO ] [o.s.web.servlet.DispatcherServlet:547 ] - Completed initialization in 8 ms
+[12:02:01.961] [SpringContextShutdownHook] [INFO ] [o.s.s.concurrent.ThreadPoolTaskExecutor:208 ] - Shutting down ExecutorService 'applicationTaskExecutor'
+[12:02:17.334] [restartedMain] [INFO ] [c.s.t.c.d.q.QuestionSevenApplication:55  ] - Starting QuestionSevenApplication on DESKTOP-RNEJQOJ with PID 24860 (started by A in G:\doc\培训相关\concurrent.demo)
+[12:02:17.348] [restartedMain] [INFO ] [c.s.t.c.d.q.QuestionSevenApplication:651 ] - No active profile set, falling back to default profiles: default
+[12:02:17.594] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[12:02:17.595] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[12:02:18.506] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:249 ] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[12:02:18.507] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:127 ] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[12:02:18.554] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:187 ] - Finished Spring Data repository scanning in 32ms. Found 0 JPA repository interfaces.
+[12:02:18.731] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:249 ] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[12:02:18.731] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:127 ] - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[12:02:18.749] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:187 ] - Finished Spring Data repository scanning in 18ms. Found 0 JDBC repository interfaces.
+[12:02:19.168] [restartedMain] [INFO ] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 ] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[12:02:19.561] [restartedMain] [INFO ] [o.s.b.w.embedded.tomcat.TomcatWebServer:92  ] - Tomcat initialized with port(s): 8080 (http)
+[12:02:19.599] [restartedMain] [INFO ] [o.apache.coyote.http11.Http11NioProtocol:173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+[12:02:19.600] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Starting service [Tomcat]
+[12:02:19.602] [restartedMain] [INFO ] [org.apache.catalina.core.StandardEngine:173 ] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+[12:02:19.842] [restartedMain] [INFO ] [o.a.c.c.C.[Tomcat].[localhost].[/]:173 ] - Initializing Spring embedded WebApplicationContext
+[12:02:19.843] [restartedMain] [INFO ] [o.s.web.context.ContextLoader:284 ] - Root WebApplicationContext: initialization completed in 2248 ms
+[12:02:19.935] [restartedMain] [INFO ] [o.s.b.f.a.AutowiredAnnotationBeanPostProcessor:502 ] - Autowired annotation should only be used on methods with parameters: public com.snowball.training.concurrent.demo.question7.datasource.User com.snowball.training.concurrent.demo.question7.datasource.UserService.register()
+[12:02:22.394] [restartedMain] [INFO ] [o.s.s.concurrent.ThreadPoolTaskExecutor:171 ] - Initializing ExecutorService 'applicationTaskExecutor'
+[12:02:22.679] [restartedMain] [INFO ] [o.s.b.d.a.OptionalLiveReloadServer:58  ] - LiveReload server is running on port 35729
+[12:02:22.709] [restartedMain] [INFO ] [o.apache.coyote.http11.Http11NioProtocol:173 ] - Starting ProtocolHandler ["http-nio-8080"]
+[12:02:22.753] [restartedMain] [INFO ] [o.s.b.w.embedded.tomcat.TomcatWebServer:204 ] - Tomcat started on port(s): 8080 (http) with context path ''
+[12:02:22.757] [restartedMain] [INFO ] [c.s.t.c.d.q.QuestionSevenApplication:61  ] - Started QuestionSevenApplication in 6.376 seconds (JVM running for 9.113)
+[12:02:28.172] [SpringContextShutdownHook] [INFO ] [o.s.s.concurrent.ThreadPoolTaskExecutor:208 ] - Shutting down ExecutorService 'applicationTaskExecutor'
+[12:02:37.582] [restartedMain] [INFO ] [c.s.t.c.d.q.QuestionSevenApplication:55  ] - Starting QuestionSevenApplication on DESKTOP-RNEJQOJ with PID 24088 (started by A in G:\doc\培训相关\concurrent.demo)
+[12:02:37.606] [restartedMain] [INFO ] [c.s.t.c.d.q.QuestionSevenApplication:651 ] - No active profile set, falling back to default profiles: default
+[12:02:37.875] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[12:02:37.875] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[12:02:39.066] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:249 ] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[12:02:39.066] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:127 ] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[12:02:39.129] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:187 ] - Finished Spring Data repository scanning in 46ms. Found 0 JPA repository interfaces.
+[12:02:39.456] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:249 ] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[12:02:39.457] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:127 ] - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[12:02:39.471] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:187 ] - Finished Spring Data repository scanning in 14ms. Found 0 JDBC repository interfaces.
+[12:02:39.876] [restartedMain] [INFO ] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 ] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[12:02:40.284] [restartedMain] [INFO ] [o.s.b.w.embedded.tomcat.TomcatWebServer:92  ] - Tomcat initialized with port(s): 8080 (http)
+[12:02:40.295] [restartedMain] [INFO ] [o.apache.coyote.http11.Http11NioProtocol:173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+[12:02:40.296] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Starting service [Tomcat]
+[12:02:40.296] [restartedMain] [INFO ] [org.apache.catalina.core.StandardEngine:173 ] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+[12:02:40.476] [restartedMain] [INFO ] [o.a.c.c.C.[Tomcat].[localhost].[/]:173 ] - Initializing Spring embedded WebApplicationContext
+[12:02:40.477] [restartedMain] [INFO ] [o.s.web.context.ContextLoader:284 ] - Root WebApplicationContext: initialization completed in 2601 ms
+[12:02:40.545] [restartedMain] [INFO ] [o.s.b.f.a.AutowiredAnnotationBeanPostProcessor:502 ] - Autowired annotation should only be used on methods with parameters: public com.snowball.training.concurrent.demo.question7.datasource.User com.snowball.training.concurrent.demo.question7.datasource.UserService.register()
+[12:05:47.041] [restartedMain] [INFO ] [o.s.s.concurrent.ThreadPoolTaskExecutor:171 ] - Initializing ExecutorService 'applicationTaskExecutor'
+[12:05:47.326] [restartedMain] [INFO ] [o.s.b.d.a.OptionalLiveReloadServer:58  ] - LiveReload server is running on port 35729
+[12:05:47.352] [restartedMain] [INFO ] [o.apache.coyote.http11.Http11NioProtocol:173 ] - Starting ProtocolHandler ["http-nio-8080"]
+[12:05:47.388] [restartedMain] [INFO ] [o.s.b.w.embedded.tomcat.TomcatWebServer:204 ] - Tomcat started on port(s): 8080 (http) with context path ''
+[12:05:47.392] [restartedMain] [INFO ] [c.s.t.c.d.q.QuestionSevenApplication:61  ] - Started QuestionSevenApplication in 191.561 seconds (JVM running for 194.328)
+[12:06:05.982] [http-nio-8080-exec-1] [INFO ] [o.a.c.c.C.[Tomcat].[localhost].[/]:173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[12:06:05.982] [http-nio-8080-exec-1] [INFO ] [o.s.web.servlet.DispatcherServlet:525 ] - Initializing Servlet 'dispatcherServlet'
+[12:06:05.990] [http-nio-8080-exec-1] [INFO ] [o.s.web.servlet.DispatcherServlet:547 ] - Completed initialization in 8 ms
+[12:07:10.393] [Thread-15] [WARN ] [c.s.t.c.d.q.j.JedisMisreuseController:44  ] - Expect a to be 1 but found 2
+[12:07:34.441] [SpringContextShutdownHook] [INFO ] [o.s.s.concurrent.ThreadPoolTaskExecutor:208 ] - Shutting down ExecutorService 'applicationTaskExecutor'
+[12:16:40.391] [restartedMain] [INFO ] [c.s.t.c.d.q.QuestionSevenApplication:55  ] - Starting QuestionSevenApplication on DESKTOP-RNEJQOJ with PID 23288 (started by A in G:\doc\培训相关\concurrent.demo)
+[12:16:40.395] [restartedMain] [INFO ] [c.s.t.c.d.q.QuestionSevenApplication:651 ] - No active profile set, falling back to default profiles: default
+[12:16:40.468] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[12:16:40.469] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[12:16:41.067] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:249 ] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[12:16:41.067] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:127 ] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[12:16:41.107] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:187 ] - Finished Spring Data repository scanning in 31ms. Found 0 JPA repository interfaces.
+[12:16:41.281] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:249 ] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[12:16:41.282] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:127 ] - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[12:16:41.295] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:187 ] - Finished Spring Data repository scanning in 12ms. Found 0 JDBC repository interfaces.
+[12:16:41.589] [restartedMain] [INFO ] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 ] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[12:16:41.965] [restartedMain] [INFO ] [o.s.b.w.embedded.tomcat.TomcatWebServer:92  ] - Tomcat initialized with port(s): 8080 (http)
+[12:16:41.972] [restartedMain] [INFO ] [o.apache.coyote.http11.Http11NioProtocol:173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+[12:16:41.973] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Starting service [Tomcat]
+[12:16:41.973] [restartedMain] [INFO ] [org.apache.catalina.core.StandardEngine:173 ] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+[12:16:42.086] [restartedMain] [INFO ] [o.a.c.c.C.[Tomcat].[localhost].[/]:173 ] - Initializing Spring embedded WebApplicationContext
+[12:16:42.086] [restartedMain] [INFO ] [o.s.web.context.ContextLoader:284 ] - Root WebApplicationContext: initialization completed in 1617 ms
+[12:16:42.135] [restartedMain] [INFO ] [o.s.b.f.a.AutowiredAnnotationBeanPostProcessor:502 ] - Autowired annotation should only be used on methods with parameters: public com.snowball.training.concurrent.demo.question7.datasource.User com.snowball.training.concurrent.demo.question7.datasource.UserService.register()
+[12:16:44.907] [restartedMain] [INFO ] [o.s.s.concurrent.ThreadPoolTaskExecutor:171 ] - Initializing ExecutorService 'applicationTaskExecutor'
+[12:16:45.123] [restartedMain] [INFO ] [o.s.b.d.a.OptionalLiveReloadServer:58  ] - LiveReload server is running on port 35729
+[12:16:45.146] [restartedMain] [INFO ] [o.apache.coyote.http11.Http11NioProtocol:173 ] - Starting ProtocolHandler ["http-nio-8080"]
+[12:16:45.172] [restartedMain] [INFO ] [o.s.b.w.embedded.tomcat.TomcatWebServer:204 ] - Tomcat started on port(s): 8080 (http) with context path ''
+[12:16:45.175] [restartedMain] [INFO ] [c.s.t.c.d.q.QuestionSevenApplication:61  ] - Started QuestionSevenApplication in 5.308 seconds (JVM running for 7.793)
+[12:19:00.079] [http-nio-8080-exec-1] [INFO ] [o.a.c.c.C.[Tomcat].[localhost].[/]:173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[12:19:00.080] [http-nio-8080-exec-1] [INFO ] [o.s.web.servlet.DispatcherServlet:525 ] - Initializing Servlet 'dispatcherServlet'
+[12:19:00.088] [http-nio-8080-exec-1] [INFO ] [o.s.web.servlet.DispatcherServlet:547 ] - Completed initialization in 8 ms
+[12:29:03.464] [restartedMain] [INFO ] [c.s.t.c.d.q.QuestionSevenApplication:55  ] - Starting QuestionSevenApplication on DESKTOP-RNEJQOJ with PID 25220 (started by A in G:\doc\培训相关\concurrent.demo)
+[12:29:03.467] [restartedMain] [INFO ] [c.s.t.c.d.q.QuestionSevenApplication:651 ] - No active profile set, falling back to default profiles: default
+[12:29:03.529] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[12:29:03.530] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[12:29:04.137] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:249 ] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[12:29:04.137] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:127 ] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[12:29:04.183] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:187 ] - Finished Spring Data repository scanning in 30ms. Found 0 JPA repository interfaces.
+[12:29:04.395] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:249 ] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[12:29:04.395] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:127 ] - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[12:29:04.409] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:187 ] - Finished Spring Data repository scanning in 13ms. Found 0 JDBC repository interfaces.
+[12:29:04.669] [restartedMain] [INFO ] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 ] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[12:29:05.002] [restartedMain] [INFO ] [o.s.b.w.embedded.tomcat.TomcatWebServer:92  ] - Tomcat initialized with port(s): 8080 (http)
+[12:29:05.012] [restartedMain] [INFO ] [o.apache.coyote.http11.Http11NioProtocol:173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+[12:29:05.013] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Starting service [Tomcat]
+[12:29:05.013] [restartedMain] [INFO ] [org.apache.catalina.core.StandardEngine:173 ] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+[12:29:05.143] [restartedMain] [INFO ] [o.a.c.c.C.[Tomcat].[localhost].[/]:173 ] - Initializing Spring embedded WebApplicationContext
+[12:29:05.144] [restartedMain] [INFO ] [o.s.web.context.ContextLoader:284 ] - Root WebApplicationContext: initialization completed in 1614 ms
+[12:29:05.204] [restartedMain] [INFO ] [o.s.b.f.a.AutowiredAnnotationBeanPostProcessor:502 ] - Autowired annotation should only be used on methods with parameters: public com.snowball.training.concurrent.demo.question7.datasource.User com.snowball.training.concurrent.demo.question7.datasource.UserService.register()
+[12:29:07.871] [restartedMain] [INFO ] [o.s.s.concurrent.ThreadPoolTaskExecutor:171 ] - Initializing ExecutorService 'applicationTaskExecutor'
+[12:29:08.077] [restartedMain] [INFO ] [o.s.b.d.a.OptionalLiveReloadServer:58  ] - LiveReload server is running on port 35729
+[12:29:08.100] [restartedMain] [INFO ] [o.apache.coyote.http11.Http11NioProtocol:173 ] - Starting ProtocolHandler ["http-nio-8080"]
+[12:29:08.125] [restartedMain] [INFO ] [o.s.b.w.embedded.tomcat.TomcatWebServer:204 ] - Tomcat started on port(s): 8080 (http) with context path ''
+[12:29:08.127] [restartedMain] [INFO ] [c.s.t.c.d.q.QuestionSevenApplication:61  ] - Started QuestionSevenApplication in 5.128 seconds (JVM running for 7.421)
+[12:29:24.475] [http-nio-8080-exec-2] [INFO ] [o.a.c.c.C.[Tomcat].[localhost].[/]:173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[12:29:24.476] [http-nio-8080-exec-2] [INFO ] [o.s.web.servlet.DispatcherServlet:525 ] - Initializing Servlet 'dispatcherServlet'
+[12:29:24.483] [http-nio-8080-exec-2] [INFO ] [o.s.web.servlet.DispatcherServlet:547 ] - Completed initialization in 7 ms
+[14:34:05.989] [restartedMain] [INFO ] [c.s.t.c.d.q.QuestionSevenApplication:55  ] - Starting QuestionSevenApplication on DESKTOP-RNEJQOJ with PID 14768 (started by A in G:\doc\培训相关\concurrent.demo)
+[14:34:05.994] [restartedMain] [INFO ] [c.s.t.c.d.q.QuestionSevenApplication:651 ] - No active profile set, falling back to default profiles: default
+[14:34:06.080] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[14:34:06.080] [restartedMain] [INFO ] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:225 ] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[14:34:06.890] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:249 ] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[14:34:06.890] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:127 ] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[14:34:06.940] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:187 ] - Finished Spring Data repository scanning in 36ms. Found 0 JPA repository interfaces.
+[14:34:07.173] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:249 ] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[14:34:07.174] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:127 ] - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[14:34:07.199] [restartedMain] [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate:187 ] - Finished Spring Data repository scanning in 24ms. Found 0 JDBC repository interfaces.
+[14:34:07.647] [restartedMain] [INFO ] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 ] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[14:34:08.028] [restartedMain] [INFO ] [o.s.b.w.embedded.tomcat.TomcatWebServer:92  ] - Tomcat initialized with port(s): 8080 (http)
+[14:34:08.039] [restartedMain] [INFO ] [o.apache.coyote.http11.Http11NioProtocol:173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+[14:34:08.040] [restartedMain] [INFO ] [org.apache.catalina.core.StandardService:173 ] - Starting service [Tomcat]
+[14:34:08.040] [restartedMain] [INFO ] [org.apache.catalina.core.StandardEngine:173 ] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+[14:34:08.161] [restartedMain] [INFO ] [o.a.c.c.C.[Tomcat].[localhost].[/]:173 ] - Initializing Spring embedded WebApplicationContext
+[14:34:08.162] [restartedMain] [INFO ] [o.s.web.context.ContextLoader:284 ] - Root WebApplicationContext: initialization completed in 2082 ms
+[14:34:08.238] [restartedMain] [INFO ] [o.s.b.f.a.AutowiredAnnotationBeanPostProcessor:502 ] - Autowired annotation should only be used on methods with parameters: public com.snowball.training.concurrent.demo.question7.datasource.User com.snowball.training.concurrent.demo.question7.datasource.UserService.register()
+[14:34:32.422] [restartedMain] [INFO ] [o.s.s.concurrent.ThreadPoolTaskExecutor:171 ] - Initializing ExecutorService 'applicationTaskExecutor'
+[14:34:32.801] [restartedMain] [INFO ] [o.s.b.d.a.OptionalLiveReloadServer:58  ] - LiveReload server is running on port 35729
+[14:34:32.839] [restartedMain] [INFO ] [o.apache.coyote.http11.Http11NioProtocol:173 ] - Starting ProtocolHandler ["http-nio-8080"]
+[14:34:32.889] [restartedMain] [INFO ] [o.s.b.w.embedded.tomcat.TomcatWebServer:204 ] - Tomcat started on port(s): 8080 (http) with context path ''
+[14:34:32.894] [restartedMain] [INFO ] [c.s.t.c.d.q.QuestionSevenApplication:61  ] - Started QuestionSevenApplication in 27.575 seconds (JVM running for 30.32)
+[14:34:42.570] [http-nio-8080-exec-2] [INFO ] [o.a.c.c.C.[Tomcat].[localhost].[/]:173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[14:34:42.570] [http-nio-8080-exec-2] [INFO ] [o.s.web.servlet.DispatcherServlet:525 ] - Initializing Servlet 'dispatcherServlet'
+[14:34:42.580] [http-nio-8080-exec-2] [INFO ] [o.s.web.servlet.DispatcherServlet:547 ] - Completed initialization in 10 ms
+[14:34:43.787] [Thread-15] [INFO ] [c.s.t.c.d.q.j.JedisMisreuseController:76  ] - execute successfully- Thread-15
+[14:34:43.908] [Thread-16] [INFO ] [c.s.t.c.d.q.j.JedisMisreuseController:88  ] - execute successfully- Thread-16
