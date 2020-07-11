@@ -7,7 +7,8 @@ import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfigurat
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@SpringBootApplication(scanBasePackages ={"com.snowball.training.concurrent.demo"} ,exclude= {DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class})
+//@SpringBootApplication(scanBasePackages ={"com.snowball.training.concurrent.demo"} ,exclude= {DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class})
+@SpringBootApplication
 @EnableJpaRepositories(basePackages = {"com.snowball.training.concurrent.demo"})
 public class Application {
 

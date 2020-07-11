@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 //@SpringBootApplication(exclude= {DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class})
 @SpringBootApplication
-@EnableJpaRepositories(basePackages = {"com.snowball.training.concurrent.demo"})
+//@EnableJpaRepositories(basePackages = {"com.snowball.training.concurrent.demo"})
 public class QuestionSevenApplication {
 
     public static void main(String[] args) {

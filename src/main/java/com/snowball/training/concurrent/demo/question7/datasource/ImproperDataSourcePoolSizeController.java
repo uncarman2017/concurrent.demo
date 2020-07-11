@@ -7,13 +7,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("improperdatasourcepoolsize")
+@RequestMapping("q7")
 @Slf4j
 public class ImproperDataSourcePoolSizeController {
     @Autowired
     private UserService userService;
 
-    @GetMapping("test")
+    @GetMapping("testDS")
     public Object test() {
         return userService.register();
     }

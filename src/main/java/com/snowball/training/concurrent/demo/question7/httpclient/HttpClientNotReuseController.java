@@ -38,7 +38,7 @@ public class HttpClientNotReuseController {
         CloseableHttpClient client = HttpClients.custom()
                 .setConnectionManager(new PoolingHttpClientConnectionManager())
                 .evictIdleConnections(60, TimeUnit.SECONDS).build();
-        try (CloseableHttpResponse response = client.execute(new HttpGet("http://127.0.0.1:45678/httpclientnotreuse/test"))) {
+        try (CloseableHttpResponse response = client.execute(new HttpGet("http://127.0.0.1:8080/q7/test"))) {
             return EntityUtils.toString(response.getEntity());
         } catch (Exception ex) {
             ex.printStackTrace();
@@ -51,7 +51,7 @@ public class HttpClientNotReuseController {
         try (CloseableHttpClient client = HttpClients.custom()
                 .setConnectionManager(new PoolingHttpClientConnectionManager())
                 .evictIdleConnections(60, TimeUnit.SECONDS).build();
-             CloseableHttpResponse response = client.execute(new HttpGet("http://127.0.0.1:45678/httpclientnotreuse/test"))) {
+             CloseableHttpResponse response = client.execute(new HttpGet("http://127.0.0.1:8080/q7/test"))) {
             return EntityUtils.toString(response.getEntity());
         } catch (Exception ex) {
             ex.printStackTrace();
@@ -61,7 +61,7 @@ public class HttpClientNotReuseController {
 
     @GetMapping("right2")
     public String right() {
-        try (CloseableHttpResponse response = httpClient.execute(new HttpGet("http://127.0.0.1:45678/httpclientnotreuse/test"))) {
+        try (CloseableHttpResponse response = httpClient.execute(new HttpGet("http://127.0.0.1:8080/q7/test"))) {
             return EntityUtils.toString(response.getEntity());
         } catch (Exception ex) {
             ex.printStackTrace();
