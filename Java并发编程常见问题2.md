@@ -784,11 +784,13 @@ public int wrong(@RequestParam(value = "count", defaultValue = "10") int count) 
 
 虽然一个请求需要 1 秒执行完成，但我们的线程池是可以扩张使用任意数量线程的。按道理说，10 个请求并发处理的时间基本相当于 1 个请求的处理时间，也就是 1 秒，但日志中显示实际耗时 5 秒：
 
+![1594557718524](images/1594557718524.png)
+
 查看 **PoolingHttpClientConnectionManager** 源码，可以注意到有两个重要参数：
 
-**defaultMaxPerRoute=2，也就是同一个主机 / 域名的最大并发请求数为 2。我们的爬虫需要 10 个并发，显然是默认值太小限制了爬虫的效率。**
+**defaultMaxPerRoute=2，也就是同一个主机 / 域名的最大并发请求数为 2。**我们的爬虫需要 10 个并发，显然是默认值太小限制了爬虫的效率。
 
-maxTotal=20，也就是所有主机整体最大并发为 20，这也是 HttpClient 整体的并发度。目前，我们请求数是 10 最大并发是 10，20 不会成为瓶颈。举一个例子，使用同一个 HttpClient 访问 10 个域名，defaultMaxPerRoute 设置为 10，为确保每一个域名都能达到 10 并发，需要把 maxTotal 设置为 100。
+**maxTotal=20，也就是所有主机整体最大并发为 20，这也是 HttpClient 整体的并发度。**目前，我们请求数是 10 最大并发是 10，20 不会成为瓶颈。举一个例子，使用同一个 HttpClient 访问 10 个域名，defaultMaxPerRoute 设置为 10，为确保每一个域名都能达到 10 并发，需要把 maxTotal 设置为 100。
 
 ```java
 public class PoolingHttpClientConnectionManager implements HttpClientConnectionManager, ConnPoolControl<HttpRoute>, Closeable {
@@ -831,7 +833,7 @@ HttpClient 是 Java 非常常用的 HTTP 客户端，这个问题经常出现。
 static CloseableHttpClient httpClient2;
 
 static {
-    httpClient2 = HttpClients.custom().setMaxConnPerRoute(10).setMaxConnTotal(20).build();
+    httpClient2 = httpClients.custom().setMaxConnPerRoute(10).setMaxConnTotal(20).build();
 
     Runtime.getRuntime().addShutdownHook(new Thread(() -> {
         try {
