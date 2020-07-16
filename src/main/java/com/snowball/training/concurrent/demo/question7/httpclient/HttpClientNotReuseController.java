@@ -23,7 +23,7 @@ public class HttpClientNotReuseController {
     private static CloseableHttpClient httpClient = null;
 
     static {
-        httpClient = HttpClients.custom().setMaxConnPerRoute(1).setMaxConnTotal(1).evictIdleConnections(60, TimeUnit.SECONDS).build();
+        httpClient = HttpClients.custom().setMaxConnPerRoute(10).setMaxConnTotal(10).evictIdleConnections(60, TimeUnit.SECONDS).build();
 
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
             try {

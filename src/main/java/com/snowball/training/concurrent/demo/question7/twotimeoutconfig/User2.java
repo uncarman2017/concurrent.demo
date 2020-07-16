@@ -10,7 +10,7 @@ import static javax.persistence.GenerationType.AUTO;
 
 @Entity
 @Data
-public class User {
+public class User2 {
     @Id
     @GeneratedValue(strategy = AUTO)
     private Long id;
